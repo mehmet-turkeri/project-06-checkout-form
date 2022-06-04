@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Checkbox Form</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <h1>Checkout</h1>
+    <div class="main">
+
+        <div class="left">
+            <h2>Contact Information</h2>
+            <label for="email">Email</label>
+            <i class="fa-solid fa-envelope"></i>
+            <input type="text" id="email" placeholder="Enter your email..." />
+
+            <label for="phone">Phone</label>
+            <i class="fa-solid fa-phone"></i>
+            <input type="text" id="phone" placeholder="Enter your phone..." />
+            
+            <h2>Shipping adress</h2>
+            <label for="name">Full name</label>
+            <i class="fa-solid fa-user"></i>
+            <input type="text" id="name" placeholder="Enter your Full name..." />
+            
+            <label for="address">Address</label>
+            <i class="fa-solid fa-house-chimney"></i>
+            <input type="text" id="address" placeholder="Enter your address..." />
+
+            <label for="city">City</label>
+            <i class="fa-solid fa-city"></i>
+            <input type="text" id="city" placeholder="Enter your city..." />
+
+            <div class="country-postcode">
+                <div>
+                    <label for="country">Country</label>
+                    <i class="fa-solid fa-earth-europe"></i>
+                    <select name="country" id="country" class="option-box">
+                        <option value="Turkey" selected>Turkey</option>
+                        <option value="Germany">Germany</option>
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="UK">UK</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="post">Post code</label>
+                    <i class="fa-solid fa-envelopes-bulk"></i>
+                    <input type="text" id="post" class="post-code" placeholder="Enter your postal code...">
+
+                </div>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" name="info-box" id="info-box" class="info-box">
+                <label for="info-box">See this information next time</label>
+                
+            </div>
+
+            <div class="continue">
+                <button class="button">Continue</button>
+            </div>
+            
+        </div>
+
+        <div class="right">
+            <div class="vintage">
+                <div class="picbox"><img src="./img/photo1.png" alt="" class="urun"></div>
+                <div class="adet">
+                    <h3>Vintage Backbag</h3>
+                    <p><span>$54.99</span> <small><del>$94.99</del></small></p>
+                    <div><span>-</span><span>1</span><span>+</span></div>
+                </div>
+            </div>
+            <div class="levi">
+                <div class="picbox"><img src="./img/photo2.png" alt="" class="urun"></div>
+                <div class="adet">
+                    <h3>Levi Shoes</h3>
+                    <p><span>$74.99</span> <small><del>$124.99</del></small></p>
+                    <div><span>-</span><span>1</span><span>+</span></div>            
+
+                </div>
+            </div>
+
+            <div class="shipping">
+                <p>Shipping</p>
+                <p>$19</p>
+            </div>
+
+            <div class="total">
+                <p>Total</p>
+                <p>$148.98</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/d6d7ecfc42.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
